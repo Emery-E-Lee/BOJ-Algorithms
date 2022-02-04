@@ -7,5 +7,5 @@ avg = 0
 
 for i in range (0,len(num)):
     avg += num[i]
-print(int(avg/len(num)), end='\n') #int로 안 바꿔주면 '.0'이 같이 출력됨
+print(int(avg/len(num)), end='\n') #int로 안 바꿔주면 소수점이 같이 출력됨
 print(num[2])
