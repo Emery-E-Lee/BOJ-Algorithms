@@ -13,8 +13,7 @@ cards_list = [int(input()) for _ in range(all)]
 result = set()
 
 for i in permutations(cards_list, pick): #cards_list에서 pick의 개수를 뽑아 만든 리스트 길이 만큼 for문이 돈다.
-        result.add(''.join(map(str,i))) #TypeError가 나서 str으로 바꿔줌
-
+        result.add(''.join(map(str,i))) #join으로 뽑아낸 카드를 이어주고, set의 메소드 add 사용, 값을 추가. + TypeError가 나서 str으로 바꿔줌.
 print(len(result))
 
 # permutation
