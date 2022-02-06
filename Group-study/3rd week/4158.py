@@ -27,7 +27,7 @@ while True:
         i += 1
         j += 1
         cnt += 1
-    if (i == N-1) or (j == M-1):
+    if (i == N) or (j == M):
         break
 
 print(cnt)
