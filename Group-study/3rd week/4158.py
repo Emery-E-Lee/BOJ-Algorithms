@@ -18,8 +18,7 @@ i = 0
 j = 0
 
 while True:
-    if (i == N) or (j == M):
-        break
+
     if (N_cd[i] < M_cd[j]):
         i += 1
     elif (N_cd[i] > M_cd[j]):
@@ -28,6 +27,7 @@ while True:
         i += 1
         j += 1
         cnt += 1
-
+    if (i == N-1) or (j == M-1):
+        break
 
 print(cnt)
