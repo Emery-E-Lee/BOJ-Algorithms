@@ -1,6 +1,6 @@
 import sys
 N = int(sys.stdin.readline()) # 출입 기록 수 N 입력
-result = {} # 빈 딕셔너리 생성
+result = {} # 빈 dictionary 생성
 for _ in range(N): # N번 만큼 반복
     name, status = map(str, sys.stdin.readline().split()) #값을 받아 스트링으로 변환, name, status에 대입
     if status == 'enter': #status가 'enter'라면,
