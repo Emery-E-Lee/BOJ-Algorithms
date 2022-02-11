@@ -17,17 +17,17 @@ cnt = 0
 i = 0
 j = 0
 
-while True:
-
-    if (N_cd[i] < M_cd[j]):
+while True: # CD번호가 오름차순으로 정렬되어 있으므로, 인덱스 값을 이용
+    # 두 리스트의 인덱스 0부터 비교, 요소 값이 작은 리스트의 인덱스를 +1 해서 비교한다
+    if (N_cd[i] < M_cd[j]): 
         i += 1
     elif (N_cd[i] > M_cd[j]):
         j += 1
-    else:
+    else: # 요소 값이 같다면 count를 +1하고, 둘 다 다음 인덱스로 넘어가 비교
         i += 1
         j += 1
         cnt += 1
-    if (i == N) or (j == M):
+    if (i == N) or (j == M): # 둘 중 하나라도 갖고 있는 CD수에 다다르면, 종료
         break
 
 print(cnt)
