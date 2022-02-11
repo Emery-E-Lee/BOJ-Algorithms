@@ -1,3 +1,5 @@
+# 참고
+
 import sys
 lst = ['Re', 'Pt', 'Cc', 'Ea', 'Tb', 'Cm', 'Ex']
 work = dict() #dictionary 생성
